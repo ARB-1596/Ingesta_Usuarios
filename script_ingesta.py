@@ -16,3 +16,5 @@ nombreBucket = "tickets-aereo"
 s3 = boto3.client('s3')
 response = s3.upload_file("usuarios.csv",nombreBucket, ficheroUpload)
 print(response)
+
+print("Ingesta completada")
